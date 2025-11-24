@@ -12,6 +12,13 @@ const result_filter = arr.filter(
 (value) => (value >= 3),
 );
 
-
+const result = arr.filter(
+(value) => (value >= 3),
+).map(
+(value) => value * 10,
+).reduce(
+(pre, value) => pre + value,
+0,
+);
 
 console.log(`${result_filter}`)
