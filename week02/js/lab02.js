@@ -82,6 +82,8 @@ function createInputListComponent(componentElem) {
   return componentElem;
 }
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
   createInputListComponent(document.querySelector('body'));
 });
