@@ -38,14 +38,12 @@ const createSection = (appContainer) => {
   regenerateSectionTitleNumbers(appContainer);
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-  const appContainer = document.querySelector('.app-cmp-section-list');
-  
-  appContainer.addEventListener('click', (ev) => {
-    if (ev.target?.matches('.app-cmd-add-section')) {
-      createSection(appContainer);
-    }
-  });
+const appContainer = document.querySelector('.app-cmp-section-list');
 
-  createSection(appContainer);
+appContainer.addEventListener('click', (ev) => {
+  if (ev.target?.matches('.app-cmd-add-section')) {
+    createSection(appContainer);
+  }
 });
+
+createSection(appContainer);
