@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="application/javascript"
+      src="./js/dom-03-template.js"
+    ></script>
+    <link rel="stylesheet" href="./css/dom.css" />
+    <title>DOM-02: Addable</title>
+  </head>
+  <body>
+    <button type="button" class="add-box">Add New Number</button>
+    <div class="number-box">
+      <template class="number-template">
+        <div class="number-input">
+          <label>
+            <b>Number <span class="box-number"></span>:</b>
+            <input type="number" class="input-number" />
+          </label>
+          <button type="button" class="remove-number-input">X</button>
+        </div>
+        <button type="button">X</button>
+      </template>
+    </div>
+
+    <label>
+      <b>Result:</b>
+      <output class="output-number"> 0 </output>
+    </label>
+  </body>
+</html>
